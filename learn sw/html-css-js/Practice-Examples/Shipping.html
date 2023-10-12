@@ -1,0 +1,523 @@
+<html>
+
+​
+
+<head>
+
+<title>Shipping Address</title>
+
+<script>
+
+function fillForm() {
+
+//confirm("Are you sure \n Please check once");
+
+document.getElementById("P_U_N").innerHTML = "";
+
+document.getElementById("P_M_N").innerHTML = "";
+
+document.getElementById("P_E_I").innerHTML = "";
+
+​
+
+​
+
+document.getElementById('P_d_no').value = document.getElementById("d_no").value;
+
+document.getElementById('P_Street').value = document.getElementById("Street").value;
+
+document.getElementById('P_Area').value = document.getElementById("Area").value;
+
+document.getElementById('P_City').value = document.getElementById("City").value;
+
+document.getElementById('P_District').value = document.getElementById("District").value;
+
+document.getElementById('P_State').value = document.getElementById("State").value;
+
+document.getElementById('P_PIN').value = document.getElementById("PIN").value;
+
+}
+
+function clearForm() {
+
+//confirm("Please Enter the Details");
+
+​
+
+var n = `<table>
+
+<tr>
+
+<td>Name</td>
+
+<td>:</td>
+
+<td><input type="text" id="P_Usr_name"></td>
+
+</tr>
+
+</table>`
+
+var m = `<table>
+
+<tr>
+
+<td>Mobile Number</td>
+
+<td>:</td>
+
+<td><input type="number" maxlength="10" id="P_mbl_no"></td>
+
+</tr>
+
+</table>`
+
+var e = `<table>
+
+<tr>
+
+<td>Email ID</td>
+
+<td>:</td>
+
+<td><input type="email" id="P_Email_ID" name="email"></td>
+
+</tr>
+
+</table>`
+
+document.getElementById("P_U_N").innerHTML = n;
+
+document.getElementById("P_M_N").innerHTML = m;
+
+document.getElementById("P_E_I").innerHTML = e;
+
+​
+
+​
+
+document.getElementById('P_d_no').value = "";
+
+document.getElementById('P_Street').value = "";
+
+document.getElementById('P_Area').value = "";
+
+document.getElementById('P_City').value = "";
+
+document.getElementById('P_District').value = "";
+
+document.getElementById('P_State').value = "";
+
+document.getElementById('P_PIN').value = "";
+
+}
+
+</script>
+
+<script>
+
+function ok() {
+
+Name = document.getElementById("Usr_name").value;
+
+Mobile = document.getElementById("mbl_no").value;
+
+Email = document.getElementById("Email_ID").value;
+
+​
+
+Dr_No = document.getElementById("d_no").value;
+
+Street = document.getElementById("Street").value;
+
+Area = document.getElementById("Area").value;
+
+City = document.getElementById("City").value;
+
+District = document.getElementById("District").value;
+
+State = document.getElementById("State").value;
+
+Pin = document.getElementById("PIN").value;
+
+​
+
+var P_Usr_Nme;
+
+//P_mbl_no = document.getElementById("P_mbl_no").value;
+
+//P_Email_ID = document.getElementById("P_Email_ID").value;
+
+P_Dr_No = document.getElementById('P_d_no').value;
+
+P_Street = document.getElementById('P_Street').value;
+
+P_Area = document.getElementById('P_Area').value;
+
+P_City = document.getElementById('P_City').value;
+
+P_District = document.getElementById('P_District').value;
+
+P_State = document.getElementById('P_State').value;
+
+P_Pin = document.getElementById('P_PIN').value;
+
+​
+
+//alert(P_U_N);
+
+//confirm("Are you sure \n Please check once");
+
+​
+
+//alert( "hii" + " " + document.getElementById("Usr_name").value );
+
+document.write("Customer Details" + "<br>")
+
+document.write("Customer Name : " + Name + "<br>")
+
+document.write("Customer Mobile Number : " + Mobile + "<br>");
+
+document.write("Customer Email ID : " + Email + "<br>");
+
+document.write("<br><br>");
+
+​
+
+document.write("Billing Details" + "<br>");
+
+document.write("Door Number : " + Dr_No + "<br>");
+
+document.write("Street Name : " + Street + "<br>");
+
+document.write("Area : " + Area + "<br>");
+
+document.write("City : " + City + "<br>");
+
+document.write("District : " + District + "<br>");
+
+document.write("State : " + State + "<br>");
+
+document.write("PIN code : " + Pin + "<br>");
+
+document.write("<br>");
+
+​
+
+document.write("Shipping Details" + "<br>");
+
+if (P_Usr_Nme = " ") {
+
+P_Usr_Nme = document.getElementById("P_Usr_name").value;
+
+alert(P_Usr_Nme)
+
+//document.write("Recever Name : " + P_Usr_Nme + "<br>")
+
+}
+
+if (P_mbl_no = " ") { }
+
+else {
+
+document.write("Recever Mobile" + P_mbl_no + "<br>")
+
+}
+
+if (P_Email_ID = " ") { }
+
+else {
+
+document.write("Recever Email ID" + P_Email_ID + "<br>")
+
+}
+
+document.write("Door Number : " + P_Dr_No + "<br>");
+
+document.write("Street Name : " + P_Street + "<br>");
+
+document.write("Area : " + P_Area + "<br>");
+
+document.write("City : " + P_City + "<br>");
+
+document.write("District : " + P_District + "<br>");
+
+document.write("State : " + P_State + "<br>");
+
+document.write("PIN code : " + P_Pin);
+
+​
+
+}
+
+​
+
+</script>
+
+</head>
+
+​
+
+<body>
+
+<form>
+
+<lable>Shopping Address</lable>
+
+<table>
+
+<tr>
+
+<td>Name</td>
+
+<td>:</td>
+
+<td><input type="text" id="Usr_name"></td>
+
+</tr>
+
+<tr>
+
+<td>Mobile Number</td>
+
+<td>:</td>
+
+<td><input type="number" maxlength="10" id="mbl_no"></td>
+
+</tr>
+
+<tr>
+
+<td>Email ID</td>
+
+<td>:</td>
+
+<td><input type="email" id="Email_ID" name="email"></td>
+
+</tr>
+
+</table>
+
+​
+
+<br><br>
+
+​
+
+<label for="billing"> Billing </label>
+
+<table>
+
+<tr>
+
+<td>Door Number</td>
+
+<td>:</td>
+
+<td><input type="text" id="d_no" name="d1"></td>
+
+</tr>
+
+<tr>
+
+<td>Street Name</td>
+
+<td>:</td>
+
+<td><input type="text" id="Street" name="s1"></td>
+
+</tr>
+
+<tr>
+
+<td>Area Name</td>
+
+<td>:</td>
+
+<td><input type="text" id="Area"></td>
+
+</tr>
+
+<tr>
+
+<td>City Name</td>
+
+<td>:</td>
+
+<td><input type="text" id="City"></td>
+
+</tr>
+
+<tr>
+
+<td>District Name</td>
+
+<td>:</td>
+
+<td><input type="text" id="District"></td>
+
+</tr>
+
+<tr>
+
+<td>State Name</td>
+
+<td>:</td>
+
+<td>
+
+<select id="State">
+
+<option selected>AP</option>
+
+<option>TS</option>
+
+</select>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>PIN Number</td>
+
+<td>:</td>
+
+<td><input type="text" maxlength="6" id="PIN"></td>
+
+</tr>
+
+</table>
+
+<br>
+
+​
+
+<!-- <input type="checkbox" onclick="if( this.checked ) { fillForm(); } else { clearForm(); }"> -->
+
+Perminemt Address Same as Local Address
+
+<input type="radio" name="Address" onclick="fillForm()"> Yes
+
+<input type="radio" name="Address" onclick="clearForm()"> No
+
+<br><br>
+
+​
+
+<label for="shoping">Shoping</label>
+
+<table>
+
+<tr id="P_U_N">
+
+<td></td>
+
+</tr>
+
+<tr id="P_M_N">
+
+<td></td>
+
+</tr>
+
+<tr id="P_E_I">
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>Door Number</td>
+
+<td>:</td>
+
+<td><input type="text" id="P_d_no" name="d2"></td>
+
+</tr>
+
+<tr>
+
+<td>Street Name</td>
+
+<td>:</td>
+
+<td><input type="text" id="P_Street" name="s2"></td>
+
+</tr>
+
+<tr>
+
+<td>Area Name</td>
+
+<td>:</td>
+
+<td><input type="text" id="P_Area"></td>
+
+</tr>
+
+<tr>
+
+<td>City Name</td>
+
+<td>:</td>
+
+<td><input type="text" id="P_City"></td>
+
+</tr>
+
+<tr>
+
+<td>District Name</td>
+
+<td>:</td>
+
+<td><input type="text" id="P_District"></td>
+
+</tr>
+
+<tr>
+
+<td>State Name</td>
+
+<td>:</td>
+
+<td>
+
+<select id="P_State">
+
+<option>AP</option>
+
+<option>TS</option>
+
+</select>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>PIN Number</td>
+
+<td>:</td>
+
+<td><input type="text" maxlength="6" id="P_PIN"></td>
+
+</tr>
+
+</table>
+
+<input type="button" id="confirm" onclick="ok()" value="Confirm">
+
+<input type="reset" id="reset">
+
+</form>
+
+</body>
+
+​
+
+</html>
